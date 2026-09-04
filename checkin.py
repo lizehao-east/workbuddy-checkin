@@ -17,7 +17,7 @@ import urllib.error
 import urllib.request
 from datetime import datetime
 
-API_DOMAIN = os.environ.get("WB_DOMAIN", "www.workbuddy.cn").strip()
+API_DOMAIN = (os.environ.get("WB_DOMAIN") or "www.workbuddy.cn").strip() or "www.workbuddy.cn"
 CHECKIN_STATUS_URL = f"https://{API_DOMAIN}/v2/billing/meter/checkin-status"
 DAILY_CHECKIN_URL = f"https://{API_DOMAIN}/v2/billing/meter/daily-checkin"
 REQUEST_TIMEOUT = 20
