@@ -2,8 +2,8 @@ name: WorkBuddy Daily Cloud Checkin
 
 on:
   schedule:
-    # 每天北京时间 09:05 = UTC 01:05
-    - cron: "5 1 * * *"
+    # 每天北京时间 02:00 = UTC 前一日 18:00
+    - cron: "0 18 * * *"
   workflow_dispatch:   # 允许在 GitHub 网页手动触发调试
 
 jobs:
