@@ -1,0 +1,16 @@
+# 凭证相关，禁止提交
+config.json
+*.secret
+.env
+push_config.json
+
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.log
+last_result.json
